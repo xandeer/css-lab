@@ -1,6 +1,10 @@
 <template lang="pug">
 #app
   header CSS LAB
+  h1 Contents
+  ul
+    li
+      a(href="#vertical-centering") Vertical Centering
   main
     vertical-centering
 </template>
@@ -20,4 +24,7 @@ export default {
   max-width 1200px
   width 100%
   margin 40px auto 0
+
+  ul
+    margin-bottom 40px
 </style>

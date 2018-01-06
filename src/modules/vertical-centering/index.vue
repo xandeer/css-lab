@@ -1,5 +1,5 @@
 <template lang="pug">
-article.vertical-centering
+article#vertical-centering.vertical-centering
   header Vertical Centering
 
   demo.vertical-centering-demo(:src="code")
@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       code:
-        '/* container */\n.vertical-centering-container {display: flex;min-height: 350px;}\n\n/* item */\n.vertical-centering-item {margin: auto;}'
+        "+prefix-classex('vertical-centering-')\n  .container\n    display flex\n    min-height 350px\n\n  .item\n    margin auto\n"
     }
   }
 }

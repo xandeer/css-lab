@@ -3,13 +3,14 @@
   section.demo-preview
     slot
   
-  pre.demo-css.line-numbers 
-    code.language-css(v-html="code", ref="code")
+  pre.demo-style.line-numbers 
+    code.language-stylus(v-html="code", ref="code")
 </template>
 
 <script>
 import cssbeautify from 'cssbeautify'
 import Prism from 'prismjs'
+import 'prismjs/components/prism-stylus'
 import 'prismjs/plugins/line-numbers/prism-line-numbers'
 
 export default {
@@ -23,7 +24,7 @@ export default {
       this.$nextTick(() => {
         Prism.highlightElement(this.$refs.code)
       })
-      return Prism.highlight(beautified, Prism.languages.css)
+      return beautified
     }
   }
 }
@@ -39,11 +40,11 @@ export default {
   &-preview
     flex 50%
 
-  &-css
+  &-style
     flex 50%
   
   &-preview
-  &-css
+  &-style
     @media only screen and (orientation: portrait)
       width 100%
       flex 1
