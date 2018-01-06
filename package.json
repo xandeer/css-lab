@@ -14,8 +14,7 @@
     "cssbeautify": "^0.3.1",
     "normalize.css": "^7.0.0",
     "prismjs": "^1.9.0",
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue": "^2.5.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

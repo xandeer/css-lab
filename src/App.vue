@@ -1,20 +1,23 @@
 <template lang="pug">
 #app
-  router-view
+  header CSS LAB
+  main
+    vertical-centering
 </template>
 
 <script>
+import VerticalCentering from './modules/vertical-centering'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    VerticalCentering
+  }
 }
 </script>
 
 <style lang="stylus">
 #app
   max-width 1200px
-  min-width 700px
+  width 100%
   margin 40px auto 0
-
-  @media screen
-    min-width 100%
 </style>

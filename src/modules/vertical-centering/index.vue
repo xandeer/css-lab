@@ -1,5 +1,5 @@
 <template lang="pug">
-main.vertical-centering
+article.vertical-centering
   header Vertical Centering
 
   demo.vertical-centering-demo(:src="code")

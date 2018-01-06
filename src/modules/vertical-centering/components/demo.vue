@@ -37,10 +37,10 @@ export default {
   width 100%
   
   &-preview
-    flex 40%
+    flex 50%
 
   &-css
-    flex 60%
+    flex 50%
   
   &-preview
   &-css
