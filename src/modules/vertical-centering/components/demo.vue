@@ -41,4 +41,15 @@ export default {
 
   &-css
     flex 60%
+  
+  &-preview
+  &-css
+    @media only screen and (orientation: portrait)
+      width 100%
+      flex 1
+
+
+  @media only screen and (orientation: portrait)
+    flex-direction column
+    align-items center
 </style>
