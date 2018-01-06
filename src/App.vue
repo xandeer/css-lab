@@ -1,18 +1,31 @@
 <template lang="pug">
 #app
   header CSS LAB
-  h1 Contents
+  h1 Table of Contents
   ul
-    li
-      a(href="#vertical-centering") Vertical Centering
+    li(v-for="item in contents")
+      a(:href="item.href", v-text="item.name")
   main
     vertical-centering
 </template>
 
 <script>
 import VerticalCentering from './modules/vertical-centering'
+
+const CONTENTS = [
+  {
+    name: 'Vertical Centering',
+    href: `#${VerticalCentering.name}`
+  }
+]
+
 export default {
   name: 'app',
+  data() {
+    return {
+      contents: CONTENTS
+    }
+  },
   components: {
     VerticalCentering
   }

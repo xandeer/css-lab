@@ -8,10 +8,14 @@
 </template>
 
 <script>
+import 'prismjs/themes/prism-tomorrow.css'
+import 'prismjs/plugins/toolbar/prism-toolbar.css'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+
 import Prism from 'prismjs'
+
 import 'prismjs/components/prism-stylus'
 import 'prismjs/plugins/line-numbers/prism-line-numbers'
-import 'prismjs/plugins/toolbar/prism-toolbar.css'
 import 'prismjs/plugins/toolbar/prism-toolbar'
 import 'prismjs/plugins/show-language/prism-show-language'
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard'
@@ -31,21 +35,21 @@ export default {
   justify-content flex-start
   align-items flex-start
   width 100%
-  
-  &-preview
-    flex 50%
-
-  &-style
-    flex 50%
-  
-  &-preview
-  &-style
-    @media only screen and (orientation: portrait)
-      width 100%
-      flex 1
-
 
   @media only screen and (orientation: portrait)
     flex-direction column
     align-items center
+  
++prefix-classes('demo-')
+  .preview
+    flex 50%
+
+  .style
+    flex 50%
+  
+  .preview
+  .style
+    @media only screen and (orientation: portrait)
+      width 100%
+      flex 1
 </style>
