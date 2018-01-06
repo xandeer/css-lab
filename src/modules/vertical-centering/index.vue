@@ -21,22 +21,20 @@ export default {
   data() {
     return {
       code:
-        "+prefix-classex('vertical-centering-')\n  .container\n    display flex\n    min-height 350px\n\n  .item\n    margin auto\n"
+        "+prefix-classes('vertical-centering-')\n  .container\n    display flex\n    min-height 350px\n\n  .item\n    margin auto\n\n"
     }
   }
 }
 </script>
 
 <style lang="stylus">
-.vertical-centering
-  width 100%
-
-  &-container
++prefix-classes('vertical-centering-')
+  .container
     display flex
     min-height 350px
     background #373737
 
-  &-item
+  .item
     margin auto
     background #5f5f5f
     color #f5f5f5

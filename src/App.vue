@@ -27,4 +27,7 @@ export default {
 
   ul
     margin-bottom 40px
+
+  main > article
+    width 100%
 </style>
