@@ -1,3 +1,5 @@
+.PHONY: pull install build
+
 install:
 	yarn
 
@@ -8,5 +10,3 @@ pull:
 	git pull
 
 deploy: pull install build
-
-.PHONY: pull install build
