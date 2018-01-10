@@ -32,24 +32,14 @@ export default {
 <style lang="stylus">
 .demo
   display flex
-  justify-content flex-start
-  align-items flex-start
+  flex-wrap wrap
   width 100%
 
-  @media only screen and (orientation: portrait)
-    flex-direction column
-    align-items center
-  
 +prefix-classes('demo-')
   .preview
-    flex 50%
+  .style
+    width 50%
 
-  .style
-    flex 50%
-  
-  .preview
-  .style
-    @media only screen and (orientation: portrait)
+    @media (max-width : 800px)
       width 100%
-      flex 1
 </style>
