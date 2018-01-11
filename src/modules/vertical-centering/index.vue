@@ -3,7 +3,7 @@ article#vertical-centering.vertical-centering
   header Vertical Centering
   hr
 
-  demo.vertical-centering-demo(:src="code")
+  container(:src="code")
     section.vertical-centering-container
       main.vertical-centering-item
         h1 Am I centered yet?
@@ -12,12 +12,12 @@ article#vertical-centering.vertical-centering
 </template>
 
 <script>
-import Demo from './components/demo'
+import Container from '../item-container'
 
 export default {
   name: 'vertical-centering',
   components: {
-    Demo
+    Container
   },
   data() {
     return {
@@ -33,7 +33,6 @@ export default {
   .container
     display flex
     min-height 360px
-    background #373737
 
   .item
     margin auto

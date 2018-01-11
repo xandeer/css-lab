@@ -6,16 +6,22 @@
     li(v-for="item in contents")
       a(:href="item.href", v-text="item.name")
   main
-    vertical-centering
+    translucent-borders#translucent-borders
+    vertical-centering#vertical-centering
 </template>
 
 <script>
+import TranslucentBorders from './modules/translucent-borders'
 import VerticalCentering from './modules/vertical-centering'
 
 const CONTENTS = [
   {
+    name: 'Translucent Boaders',
+    href: '#translucent-borders'
+  },
+  {
     name: 'Vertical Centering',
-    href: `#${VerticalCentering.name}`
+    href: '#vertical-centering'
   }
 ]
 
@@ -27,6 +33,7 @@ export default {
     }
   },
   components: {
+    TranslucentBorders,
     VerticalCentering
   }
 }

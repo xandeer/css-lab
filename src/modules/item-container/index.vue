@@ -1,9 +1,9 @@
 <template lang="pug">
-.demo
-  section.demo-preview
+.item-container
+  section.item-container-preview
     slot
   
-  pre.demo-style.line-numbers 
+  pre.item-container-style.line-numbers 
     code.language-stylus(v-html="src", ref="code", data-language="stylus")
 </template>
 
@@ -21,7 +21,7 @@ import 'prismjs/plugins/show-language/prism-show-language'
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard'
 
 export default {
-  name: 'demo',
+  name: 'item-container',
   props: ['src'],
   mounted() {
     Prism.highlightElement(this.$refs.code)
@@ -30,12 +30,14 @@ export default {
 </script>
 
 <style lang="stylus">
-.demo
+.item-container
   display flex
   flex-wrap wrap
   width 100%
 
-+prefix-classes('demo-')
++prefix-classes('item-container-')
+  .preview
+    background #373737
   .preview
   .style
     width 50%
