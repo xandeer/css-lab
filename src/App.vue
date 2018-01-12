@@ -7,17 +7,23 @@
       a(:href="item.href", v-text="item.name")
   main
     translucent-borders#translucent-borders
+    multiple-borders#multiple-borders
     vertical-centering#vertical-centering
 </template>
 
 <script>
 import TranslucentBorders from './modules/translucent-borders'
+import MultipleBorders from './modules/multiple-borders'
 import VerticalCentering from './modules/vertical-centering'
 
 const CONTENTS = [
   {
-    name: 'Translucent Boaders',
+    name: 'Translucent Boders',
     href: '#translucent-borders'
+  },
+  {
+    name: 'Mutiple Borders',
+    href: '#multiple-borders'
   },
   {
     name: 'Vertical Centering',
@@ -34,6 +40,7 @@ export default {
   },
   components: {
     TranslucentBorders,
+    MultipleBorders,
     VerticalCentering
   }
 }

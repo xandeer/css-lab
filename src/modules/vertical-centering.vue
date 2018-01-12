@@ -32,7 +32,7 @@ export default {
 +prefix-classes('vertical-centering-')
   .container
     display flex
-    min-height 360px
+    min-height 320px
 
   .item
     margin auto

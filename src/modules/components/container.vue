@@ -38,6 +38,9 @@ export default {
 +prefix-classes('item-container-')
   .preview
     background #373737
+  
+    & > div
+      margin 2em auto
 
   .preview
   .style

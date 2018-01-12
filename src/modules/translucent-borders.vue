@@ -38,5 +38,4 @@ export default {
   font-size 2em
   padding 1em .6em
   line-height 1.2
-  margin 2em auto
 </style>
