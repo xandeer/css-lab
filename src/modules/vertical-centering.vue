@@ -12,7 +12,7 @@ article#vertical-centering.vertical-centering
 </template>
 
 <script>
-import Container from '../item-container'
+import Container from 'container'
 
 export default {
   name: 'vertical-centering',

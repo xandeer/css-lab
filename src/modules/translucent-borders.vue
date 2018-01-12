@@ -10,7 +10,7 @@ article.translucent-borders
 </template>
 
 <script>
-import Container from '../item-container'
+import Container from 'container'
 
 export default {
   name: 'translucent-borders',

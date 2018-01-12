@@ -38,6 +38,7 @@ export default {
 +prefix-classes('item-container-')
   .preview
     background #373737
+
   .preview
   .style
     width 50%
