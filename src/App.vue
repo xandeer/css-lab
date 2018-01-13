@@ -4,30 +4,36 @@
   h1 Table of Contents
   ul
     li(v-for="item in contents")
-      a(:href="item.href", v-text="item.name")
+      a(:href="'#' + item.href", v-text="item.name")
   main
     translucent-borders#translucent-borders
     multiple-borders#multiple-borders
+    flexible-bg-position#flexible-bg-position
     vertical-centering#vertical-centering
 </template>
 
 <script>
 import TranslucentBorders from './modules/translucent-borders'
 import MultipleBorders from './modules/multiple-borders'
+import FlexibleBgPosition from './modules/flexible-bg-position'
 import VerticalCentering from './modules/vertical-centering'
 
 const CONTENTS = [
   {
-    name: 'Translucent Boders',
-    href: '#translucent-borders'
+    name: 'Translucent boders',
+    href: 'translucent-borders'
   },
   {
-    name: 'Mutiple Borders',
-    href: '#multiple-borders'
+    name: 'Mutiple borders',
+    href: 'multiple-borders'
   },
   {
-    name: 'Vertical Centering',
-    href: '#vertical-centering'
+    name: 'Flexible background position',
+    href: 'flexible-bg-position'
+  },
+  {
+    name: 'Vertical centering',
+    href: 'vertical-centering'
   }
 ]
 
@@ -41,6 +47,7 @@ export default {
   components: {
     TranslucentBorders,
     MultipleBorders,
+    FlexibleBgPosition,
     VerticalCentering
   }
 }

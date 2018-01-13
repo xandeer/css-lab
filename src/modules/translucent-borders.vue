@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       code:
-        '.translucent-borders-box\n  border 10px solid hsla(0,0%,100%,.5)\n  background #d2d2d2\n  backgound-clip padding-box\n\n'
+        '.translucent-borders-box\n\tborder 10px solid hsla(0,0%,100%,.5)\n\tbackground #d2d2d2\n\tbackgound-clip padding-box'
     }
   }
 }

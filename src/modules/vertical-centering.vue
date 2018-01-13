@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       code:
-        "+prefix-classes('vertical-centering-')\n  .container\n    display flex\n    min-height 350px\n\n  .item\n    margin auto\n\n"
+        "+prefix-classes('vertical-centering-')\n\t.container\n\t\tdisplay flex\n\t\tmin-height 350px\n\n\t.item\n\tmargin auto"
     }
   }
 }

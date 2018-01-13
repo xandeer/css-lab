@@ -18,8 +18,7 @@ article.multiple-borders
 <script>
 import Container from 'container'
 
-const boxStyle =
-  '.multiple-borders-box\n   background yellowgreen\n   width 12em\n   min-height 8em\n   border-radius 3em\n\n'
+const boxStyle = '.multiple-borders-box\n\tbackground #58a\n\twidth 12em\n\tmin-height 8em\n\tborder-radius 3em\n\n'
 
 export default {
   name: 'multiple-borders',
@@ -28,8 +27,8 @@ export default {
   },
   data() {
     return {
-      boxShadow: boxStyle + '.box-shadow\n   box-shadow 0 0 0 1em #655, 0 0 0 1.5em deeppink',
-      outline: boxStyle + '.outline\n   border 1em solid #655\n   outline .5em solid deeppink'
+      boxShadow: boxStyle + '.box-shadow\n\tbox-shadow 0 0 0 1em #655, 0 0 0 1.5em deeppink',
+      outline: boxStyle + '.outline\n\tborder 1em solid #655\n\toutline .5em solid deeppink'
     }
   }
 }
@@ -37,20 +36,16 @@ export default {
 
 <style lang="stylus">
 .multiple-borders-box
-  background yellowgreen
+  background #58a
   width 12em
   min-height 8em
   border-radius 3em
 
   &.box-shadow
+    box-shadow 0 0 0 1em #655,
+              0 0 0 1.5em deeppink
+
   &.outline
-    margin 4em auto
-
-.box-shadow
-  box-shadow 0 0 0 1em #655,
-             0 0 0 1.5em deeppink
-
-.outline
-  border 1em solid #655
-  outline .5em solid deeppink
+    border 1em solid #655
+    outline .5em solid deeppink
 </style>
