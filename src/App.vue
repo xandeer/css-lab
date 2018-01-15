@@ -9,6 +9,7 @@
     translucent-borders#translucent-borders
     multiple-borders#multiple-borders
     flexible-bg-position#flexible-bg-position
+    inner-rounding#inner-rounding
     vertical-centering#vertical-centering
 </template>
 
@@ -16,6 +17,7 @@
 import TranslucentBorders from './modules/translucent-borders'
 import MultipleBorders from './modules/multiple-borders'
 import FlexibleBgPosition from './modules/flexible-bg-position'
+import InnerRounding from './modules/inner-rounding'
 import VerticalCentering from './modules/vertical-centering'
 
 const CONTENTS = [
@@ -30,6 +32,10 @@ const CONTENTS = [
   {
     name: 'Flexible background position',
     href: 'flexible-bg-position'
+  },
+  {
+    name: 'Inner rounding',
+    href: 'inner-rounding'
   },
   {
     name: 'Vertical centering',
@@ -48,6 +54,7 @@ export default {
     TranslucentBorders,
     MultipleBorders,
     FlexibleBgPosition,
+    InnerRounding,
     VerticalCentering
   }
 }
