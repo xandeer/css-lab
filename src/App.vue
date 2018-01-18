@@ -10,6 +10,7 @@
     multiple-borders#multiple-borders
     flexible-bg-position#flexible-bg-position
     inner-rounding#inner-rounding
+    stripes#stripes
     vertical-centering#vertical-centering
 </template>
 
@@ -18,6 +19,7 @@ import TranslucentBorders from './modules/translucent-borders'
 import MultipleBorders from './modules/multiple-borders'
 import FlexibleBgPosition from './modules/flexible-bg-position'
 import InnerRounding from './modules/inner-rounding'
+import Stripes from './modules/stripes'
 import VerticalCentering from './modules/vertical-centering'
 
 const CONTENTS = [
@@ -38,6 +40,10 @@ const CONTENTS = [
     href: 'inner-rounding'
   },
   {
+    name: 'Stripes',
+    href: 'stripes'
+  },
+  {
     name: 'Vertical centering',
     href: 'vertical-centering'
   }
@@ -55,6 +61,7 @@ export default {
     MultipleBorders,
     FlexibleBgPosition,
     InnerRounding,
+    Stripes,
     VerticalCentering
   }
 }
