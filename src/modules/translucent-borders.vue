@@ -38,4 +38,10 @@ export default {
   font-size 2em
   padding 1em .6em
   line-height 1.2
+
+.translucent-borders .item-container-preview
+  background repeating-linear-gradient(60deg,
+                                        #777, #777 15px,
+                                        #999 0, #999 30px,
+                                        #bbb 0, #bbb 45px)
 </style>
