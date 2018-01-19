@@ -35,7 +35,7 @@ export default {
   color #2d2d2d
   max-width 12em
   border-radius .5em
-  font-size 2em
+  font-size 1.2em
   padding 1em .6em
   line-height 1.2
 
