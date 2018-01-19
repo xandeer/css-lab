@@ -40,8 +40,9 @@ export default {
   line-height 1.2
 
 .translucent-borders .item-container-preview
-  background repeating-linear-gradient(60deg,
-                                        #777, #777 15px,
-                                        #999 0, #999 30px,
-                                        #bbb 0, #bbb 45px)
+  background #333
+  background-image repeating-linear-gradient(30deg,
+                                        hsla(0,0,100%,.2), hsla(0,0,100%,.2) 15px,
+                                        hsla(0,0,100%,.1) 0, hsla(0,0,100%,.1) 30px,
+                                        hsla(0,0,100%,.0) 0, hsla(0,0,100%,.0) 45px)
 </style>
