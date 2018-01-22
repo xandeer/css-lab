@@ -12,6 +12,7 @@
     inner-rounding#inner-rounding
     stripes#stripes
     complex-bg#complex-bg
+    cicada-stripes#cicada-stripes
     vertical-centering#vertical-centering
 </template>
 
@@ -22,6 +23,7 @@ import FlexibleBgPosition from './modules/flexible-bg-position'
 import InnerRounding from './modules/inner-rounding'
 import Stripes from './modules/stripes'
 import ComplexBg from './modules/complex-bg'
+import CicadaStripes from './modules/cicada-stripes'
 import VerticalCentering from './modules/vertical-centering'
 
 const CONTENTS = [
@@ -50,6 +52,10 @@ const CONTENTS = [
     href: 'complex-bg'
   },
   {
+    name: 'Cicada stripes',
+    href: 'cicada-stripes'
+  },
+  {
     name: 'Vertical centering',
     href: 'vertical-centering'
   }
@@ -69,6 +75,7 @@ export default {
     InnerRounding,
     Stripes,
     ComplexBg,
+    CicadaStripes,
     VerticalCentering
   }
 }
