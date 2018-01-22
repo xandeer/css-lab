@@ -13,6 +13,7 @@
     stripes#stripes
     complex-bg#complex-bg
     cicada-stripes#cicada-stripes
+    continuous-image-borders#continuous-image-borders
     vertical-centering#vertical-centering
 </template>
 
@@ -24,6 +25,7 @@ import InnerRounding from './modules/inner-rounding'
 import Stripes from './modules/stripes'
 import ComplexBg from './modules/complex-bg'
 import CicadaStripes from './modules/cicada-stripes'
+import ContinuousImageBorders from './modules/continuous-image-borders'
 import VerticalCentering from './modules/vertical-centering'
 
 const CONTENTS = [
@@ -56,6 +58,10 @@ const CONTENTS = [
     href: 'cicada-stripes'
   },
   {
+    name: 'Continuous image borders',
+    href: 'continuous-image-borders'
+  },
+  {
     name: 'Vertical centering',
     href: 'vertical-centering'
   }
@@ -76,6 +82,7 @@ export default {
     Stripes,
     ComplexBg,
     CicadaStripes,
+    ContinuousImageBorders,
     VerticalCentering
   }
 }
